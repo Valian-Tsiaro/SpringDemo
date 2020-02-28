@@ -12,7 +12,6 @@ import com.example.demo.model.Person;
  * @author Tsiaro
  *
  * Make the connexion between the DBB and the entities
- * Some changes
  * 
  */
 
