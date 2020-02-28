@@ -13,11 +13,10 @@ import com.example.demo.model.Person;
  *
  * Make the connexion between the DBB and the entities
  * 
- * 
  */
 
 @Repository
 @Transactional
 public interface PersonDAO extends JpaRepository<Person, Long> {
-	failed
+
 }
