@@ -45,7 +45,7 @@ public class MainController {
         return "index";
     }
  
-    @RequestMapping(value = { "/PersonList" }, method = RequestMethod.GET)
+    @RequestMapping(value = { "/personList" }, method = RequestMethod.GET)
     public String personList(Model model) {
  
     	persons = personDAO.findAll();
@@ -74,7 +74,7 @@ public class MainController {
         if (firstName != null && firstName.length() > 0 && lastName != null && lastName.length() > 0) {
             personDAO.save(personForm);
  
-            return "redirect:/PersonList";
+            return "redirect:/personList";
         }
  
         model.addAttribute("errorMessage", errorMessage);
